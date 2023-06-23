@@ -25,7 +25,7 @@ Your users should be able to:
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
 ### Solved by Chinyere Unamba
-### View site [Age calculator app]https://keen-gumdrop-27f6bc.netlify.app/
+### View site [Age calculator app](https://keen-gumdrop-27f6bc.netlify.app/)
 <!-- 
 ## Sharing your solution
 
