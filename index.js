@@ -75,3 +75,44 @@ btnEl.addEventListener("click", () => {
     checkMonth();
     checkDay();
 });
+
+function getMonthDifference(startDate, endDate) {
+  return (
+    endDate.getMonth() -
+    startDate.getMonth() +
+    12 * (endDate.getFullYear() - startDate.getFullYear())
+  );
+}
+
+// 👇️ 2
+console.log(getMonthDifference(
+  new Date('2022-01-15'), new Date('2022-03-16'))
+);
+
+// 👇️ 5
+console.log(getMonthDifference(
+  new Date('2022-01-15'), new Date('2022-06-16'))
+);
+
+// 👇️ 14
+console.log(getMonthDifference(
+  new Date('2022-01-15'), new Date('2023-03-16'))
+);
+
+function getDayDiff(startDate, endDate) {
+  const msInDay = 24 * 60 * 60 * 1000;
+
+  return Math.round(
+    Math.abs(endDate - startDate) / msInDay
+  );
+}
+
+// 👇️ 10
+console.log(
+  getDayDiff(new Date('2021-01-17'), new Date('2021-01-27'))
+);
+
+// 👇️ 34
+console.log(
+  getDayDiff(new Date('2021-01-17'), new Date('2021-02-20'))
+);
